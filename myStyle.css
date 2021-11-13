@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+  }
+
+  .main_stem{
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);    /*background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);*/
+    /*background-image: url("Images/mount_image.jpg");*/
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+  
+  /* Add a gray background color with some padding */
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background-image: linear-gradient(-225deg, #22E1FF 0%, #1D8FE1 48%, #625EB1 100%);    /*background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);*/
+    /*background-image: url("Images/mount_image.jpg");*/
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    /*background: rgba(59, 207, 72, 0.479);*/
+  }
+  
+  h2, h5, h3, p{ 
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  
+
+
+
+  /* Header/Blog Title */
+  .header {
+    padding: 30px;
+    font-size: 40px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.603);
+  }
+  
+  /* Create two unequal columns that floats next to each other */
+  /* Left column */
+  .leftcolumn {   
+    float: left;
+    width: 37.5%;
+    padding-right: 20px;
+  }
+
+  
+  
+  /* Right column */
+  .rightcolumn {
+    float: left;
+    width: 25%;
+    /*padding-left: 20px;*/
+  }
+
+  
+  
+  /* Fake image */
+  .fakeimg {
+    background-color: rgb(133, 133, 133);
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /*106 170 214*/
+  /* 89, 106, 184 */
+  
+  /* Add a card effect for articles */
+  .card {
+     background-color: rgb(248, 204, 70);
+     padding: 20px;
+     margin-top: 20px;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Footer */
+  .footer {
+    padding: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.603);
+    margin-top: 20px;
+  }
+  
+  /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {   
+      width: 100%;
+      padding: 0;
+    }
+  }
