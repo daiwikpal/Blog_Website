@@ -44,13 +44,12 @@
   
   /* Create two unequal columns that floats next to each other */
   /* Left column */
-  .leftcolumn {   
+  .leftcolumn, .middlecolumn {   
     float: left;
     width: 37.5%;
     padding-right: 20px;
   }
 
-  
   
   /* Right column */
   .rightcolumn {
@@ -71,13 +70,18 @@
   
   /* Add a card effect for articles */
   .card {
-     background-color: rgb(248, 204, 70);
+     background-color:#5AC69F;
      padding: 20px;
      margin-top: 20px;
+     transition: transform 0.2s;
   }
   .card:hover {
+   /* animation-duration: 1s;
+    animation-name: card_hover;*/
     transform: scale(1.05);
   }
+
+  
   
   /* Clear floats after the columns */
   .row:after {
