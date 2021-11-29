@@ -7,9 +7,9 @@ const blog_array = [ {
     heading: "My First Blog",
     link: "articleOne.html",
     date: "2020-01-01",
-    image: "images/default.jpeg",
+    image: "images/arduino.jpeg",
     imageAlt: "this is the image alt",
-    content: "This is my first blog post. It is a good one."
+    content: "This is a blog post!"
 
 }, 
 
@@ -38,7 +38,7 @@ const blog_array = [ {
     heading: "My Fourth Blog",
     link: "articleFour.html",
     date: "2020-01-04",
-    image: "images/default.jpeg",
+    image: "images/arduino.jpeg",
     imageAlt: "this is the image alt",
     content: "This is my fourth blog post. It is a good one."
 }, 
@@ -59,8 +59,19 @@ const blog_array = [ {
     date: "2020-01-05",
     image: "images/default.jpeg",
     imageAlt: "this is the image alt",
-    content: "This is my fifth blog post. It is a good one."
+    content: "This is my sixth blog post. It is a good one."
+},
+{
+
 }]; 
+
+//do this: piss off the user
+//bruh moment 
+
+
+
+
+
 
 
 let htmlCodeLeftColumn = ``;
@@ -92,13 +103,14 @@ function createColumnHTML (sorted_array){
           
         } else 
         {
-            htmlCodeRightColumn += `<div class="card">
-            <h2> ${sorted_array[i].heading}</h2>
-            <h5>${sorted_array[i].date}</h5>
-            <img class = "center img_radius" alt= ${sorted_array[i].imageAlt} src=${sorted_array[i].image} style = "width:100%;">
-            <p></p>
-            <p> ${sorted_array[i].content} </p>
-         </div>`; 
+            htmlCodeRightColumn += 
+            `<div class="card">
+              <h2> ${sorted_array[i].heading}</h2>
+                <h5>${sorted_array[i].date}</h5>
+                <img class = "center img_radius" alt= ${sorted_array[i].imageAlt} src=${sorted_array[i].image} style = "width:100%;">
+                <p></p>
+                <p> ${sorted_array[i].content} </p>
+            </div>`; 
             
         }
     } 
