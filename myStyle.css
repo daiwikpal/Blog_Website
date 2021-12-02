@@ -44,11 +44,24 @@
   
   /* Create two unequal columns that floats next to each other */
   /* Left column */
-  .leftcolumn, .middlecolumn {   
+  .leftcolumn, .middlecolumn{   
     float: left;
     width: 37.5%;
     padding-right: 20px;
   }
+
+  .leftcolumn_article {
+    float: left;
+    width: 75%;
+    padding-right: 20px;
+  }
+
+  .blog_card {
+    background-color:#ffffff75;
+    padding: 20px;
+    margin-top: 20px;
+    transition: transform 0.2s;
+ }
 
   
   /* Right column */

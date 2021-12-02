@@ -61,12 +61,8 @@ const blog_array = [ {
     imageAlt: "this is the image alt",
     content: "This is my sixth blog post. It is a good one."
 },
-{
+]; 
 
-}]; 
-
-//do this: piss off the user
-//bruh moment 
 
 
 
