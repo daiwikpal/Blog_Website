@@ -88,9 +88,9 @@ rightColumn.innerHTML = htmlCodeLeftColumn;
 function createColumnHTML (sorted_array){ 
     for(let i = 0; i < sorted_array.length; i++) {
         if(i % 2 != 0) {
-            htmlCodeLeftColumn += 
-            `<div class="card">
-                <h2> ${sorted_array[i].heading}</h2>
+            htmlCodeLeftColumn += //add the html code for buttons  
+            ` <div class="card">
+                <h2> <a href=${sorted_array[i].link}> ${sorted_array[i].heading} </a> </h2>
                 <h5>${sorted_array[i].date}</h5>
                 <img class = "center img_radius" alt=${sorted_array[i].imageAlt} src=${sorted_array[i].image} style = "width:100%;">
                 <p></p>
@@ -101,7 +101,7 @@ function createColumnHTML (sorted_array){
         {
             htmlCodeRightColumn += 
             `<div class="card">
-              <h2> ${sorted_array[i].heading}</h2>
+              <h2> <a href=${sorted_array[i].link}> ${sorted_array[i].heading} </a></h2>
                 <h5>${sorted_array[i].date}</h5>
                 <img class = "center img_radius" alt= ${sorted_array[i].imageAlt} src=${sorted_array[i].image} style = "width:100%;">
                 <p></p>
