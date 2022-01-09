@@ -1,4 +1,37 @@
 //import "myStyle.css"
+import { initializeApp } from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js';
+import { getAuth, onAuthStateChanged} from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js'; 
+import { getFirestore} from 'https://www.gstatic.com/firebasejs/9.6.2/firebase-firestore.js'; 
+
+
+const firebaseConfig = {
+    apiKey: "AIzaSyCXFfmfQw33WQmlDaQMsmMXByWqiJUMSCQ",
+    authDomain: "test-399eb.firebaseapp.com",
+    projectId: "test-399eb",
+    storageBucket: "test-399eb.appspot.com",
+    messagingSenderId: "128333940165",
+    appId: "1:128333940165:web:1e5f8abaccdb12f6c4f7ac",
+    measurementId: "G-495F3WCZ6L"
+  };
+  
+
+const firebaseApp = initializeApp(firebaseConfig); 
+const auth = getAuth(firebaseApp);
+const db = getFirestore(firebaseApp);
+
+// detect auth state
+
+onAuthStateChanged(auth, user => {
+    if(user != null){ 
+        console.log('logged in');
+
+    }else{ 
+
+        console.log('logged out');
+    }
+}); 
+
+
 
 
 // array of blog objects
@@ -62,12 +95,6 @@ const blog_array = [ {
     content: "This is my sixth blog post. It is a good one."
 },
 ]; 
-
-
-
-
-
-
 
 
 let htmlCodeLeftColumn = ``;
